@@ -20,16 +20,18 @@ function ItemDetail ( item ) {
 
     return (
         <div className="ContItemDetail">
-            <img className="ImgItem" src={`/assets//${item.imagen}`}/>
-            
-            <div className="InfoItem">
-                <h2>{item.titulo}</h2>
-                { item.marca !== 'relojes' ? <p>Marca: {item.marca}</p> : null}
-                <p>Descripcion:</p>
-                <pre>{item.descripcion}</pre>
-                <p>Precio: ${item.precio}</p>
-                <p>Stock: {item.stock}</p>
-                <ItemCount cantidad={cantidad} handleRestar={handleRestar} handleSumar={handleSumar} handleAgregar={() => { agregarAlcarrito(item,cantidad) } }/>
+            <div className="ContItem">
+                <img className="ImgItem" src={`/assets//${item.imagen}`}/>
+                
+                <div className="InfoItem">
+                    <h2 className='TituloItem'>{item.titulo}</h2>
+                    { item.marca !== 'relojes' ? <p>Marca: {item.marca}</p> : null}
+                    <p>Descripcion:</p>
+                    <pre>{item.descripcion}</pre>
+                    <p className='PrecioItem'>Precio: ${item.precio}</p>
+                    <p>Stock: {item.stock}</p>
+                    <ItemCount cantidad={cantidad} handleRestar={handleRestar} handleSumar={handleSumar} handleAgregar={() => { agregarAlcarrito(item,cantidad) } }/>
+                </div>
             </div>
         </div>
     )

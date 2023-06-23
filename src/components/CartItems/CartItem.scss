@@ -1,3 +1,23 @@
-.ImgCart {
-    width: 10rem;
+.CartItemCont {
+    display: flex;
+    width: 50vw;
+    border: 1px solid rgba(128, 128, 128, 0.288);
+    margin: 1rem 0;
+    background-color: #fcfcfc;
+    .ImgCart {
+        width: 5rem;
+        height: 5rem;
+    }
+    .ItemInfo {
+        display: inline-flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .ItemButton {
+        color: var(--color-principal);
+        padding: 0.3rem;
+        border-radius: 50%;
+        font-weight: bold;
+    }
 }

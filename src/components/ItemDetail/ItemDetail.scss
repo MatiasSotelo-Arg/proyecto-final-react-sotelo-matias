@@ -1,8 +1,32 @@
 .ContItemDetail {
-    margin: 1rem;
-    background-color: wheat;
-    display: inline-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    background-color: #FCFCFC;
+    .ContItem {
+        display: inline-flex;
+        border: 1px solid rgba(128, 128, 128, 0.411);
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: white;
+
+    }
     .ImgItem {
-        width: 15rem;
+        width: 20rem;
+        margin-right: 1rem;
+    }
+
+    .TituloItem {
+        margin-bottom:1rem;
+        font-size: 2rem;
+    }
+
+    .PrecioItem {
+        font-weight: bold;  
+    }
+
+    p {
+        padding: 0.4rem 0;
     }
 }

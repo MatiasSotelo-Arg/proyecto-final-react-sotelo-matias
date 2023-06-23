@@ -8,16 +8,17 @@ function CartItem () {
 
     return ( 
         <div>
-
-
             {
                 carrito.map((prod) => (
-                    <div key={prod.id}>
+                    <div key={prod.id} className="CartItemCont">
                         <img className="ImgCart" src={`/assets//${prod.imagen}`} alt="" />
-                        <h3>{prod.titulo}</h3> 
-                        <p>Precio: ${prod.precio}<span> - {prod.cantidad} unidades</span></p>
-                        <p>Total: ${prod.cantidad * prod.precio}</p>
-                        <button onClick={()=> removeItem(prod.id)}>X</button>
+                        <div className="ItemInfo">
+                            <h3>{prod.titulo}</h3> 
+                            <p>Precio: ${prod.precio}<span> - {prod.cantidad} unidades</span></p>
+                            <p>Total: ${prod.cantidad * prod.precio}</p>
+                            <button className="ItemButton" onClick={()=> removeItem(prod.id)}>X</button>
+                        </div>
+                        
                     </div>
                 ))
             }

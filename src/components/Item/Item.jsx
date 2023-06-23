@@ -11,9 +11,9 @@ function Item( {id,imagen,producto,marca,stock,titulo,descripcion,costo,precio} 
 
             <h2 className="ItemTitle"> {titulo} </h2>
 
-            <p>${precio}</p>
+            <p className='ItemPrecio'>${precio}</p>
             
-            <Link to={`/item/${id}`}>Ver Detalle</Link>
+            <Link className='ItemDetalle' to={`/item/${id}`}>Ver Detalle</Link>
 
         </div>
     )

@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import './CheckoutForm.scss'
 
 export default function CheckoutForm({ onConfirm }) {
   const [userData, setUserData] = useState({
@@ -33,9 +33,9 @@ export default function CheckoutForm({ onConfirm }) {
   }
 
   return (
-    <form className="checkout-container" onSubmit={onSubmit}>
-      <h1>Ingresa tus datos para completar la compra 🛍</h1>
-      <div >
+    <form className="CheckOutContainer" onSubmit={onSubmit}>
+      <h1 className="CheckOutTitle">Complete sus datos para completar la compra</h1>
+      <div className="CheckOutForm">
         <label>Nombre</label>
         <input
           value={userData.nombre}
@@ -44,7 +44,7 @@ export default function CheckoutForm({ onConfirm }) {
           onChange={onInputChange}
         />
       </div>
-      <div>
+      <div className="CheckOutForm">
         <label>Teléfono</label>
         <input
           value={userData.phone}
@@ -53,7 +53,7 @@ export default function CheckoutForm({ onConfirm }) {
           onChange={onInputChange}
         />
       </div>
-      <div>
+      <div className="CheckOutForm">
         <label>Email</label>
         <input
           value={userData.email}

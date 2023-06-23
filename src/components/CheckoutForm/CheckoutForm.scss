@@ -1,0 +1,29 @@
+.CheckOutContainer {
+    border: 1px solid rgba(128, 128, 128, 0.411);
+    padding: 2rem 5rem;
+    margin-top: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5rem;
+    .CheckOutTitle {
+        color: #0d3b6670;
+        margin-bottom: 2rem;
+    }
+    .CheckOutForm {
+        display: flex;
+        flex-direction: column;
+        label {
+            margin: 0.5rem 0;
+            text-align: left;
+        }
+    }
+    button {
+        margin: 1rem 1rem 0 1rem;
+        background-color: #95a9bc;
+        border-radius: 2px;
+        color: white;
+        padding: 0.5rem;
+        font-weight: bold;
+    }
+}
