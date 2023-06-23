@@ -38,7 +38,6 @@ function Checkout () {
                     <button onClick={vaciarCarrito}>Vaciar Carrito</button>
                     <h2>Precio Total: ${precioTotal()}</h2>
                     <CheckoutForm onConfirm={handleConfirm}/>
-                    {/* <button onClick={handleConfirm}>Crear orden</button> */}
                 </> : 
                 <>
                 <h2>El carrito está vacío</h2>  

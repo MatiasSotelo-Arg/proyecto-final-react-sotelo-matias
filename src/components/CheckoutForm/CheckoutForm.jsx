@@ -32,9 +32,6 @@ export default function CheckoutForm({ onConfirm }) {
     });
   }
 
-  // const styleInput = { display: "flex", marginBottom: 24 };
-  // const label = { width: "100px", marginRight: 4 };
-
   return (
     <form className="checkout-container" onSubmit={onSubmit}>
       <h1>Ingresa tus datos para completar la compra 🛍</h1>

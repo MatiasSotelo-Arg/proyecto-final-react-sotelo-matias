@@ -4,8 +4,6 @@ import './ItemDetail.scss'
 import { CartContext } from '../../context/CartContext';
 
 function ItemDetail ( item ) {
-    
-    // id,imagen,producto,marca,stock,titulo,descripcion,costo,precio
 
     const { carrito, agregarAlcarrito } = useContext(CartContext);
     console.log(carrito)
