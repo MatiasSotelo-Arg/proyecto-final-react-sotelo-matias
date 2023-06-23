@@ -1,0 +1,25 @@
+.ContNav {
+    background-color: var(--color-principal);
+    .HeaderNav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 1rem;
+        h1 {
+            color: var(--color-secundario);
+        }
+        .NavImg {
+            width: 8rem;
+        }
+    }
+   
+    .ContLink {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 25rem;
+        padding: 0.5rem 0;
+        a {
+            color: var(--color-secundario);
+        }
+    }
+}
